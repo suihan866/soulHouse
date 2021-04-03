@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="discTopSize">90dp</dimen>
+    <dimen name="playMusicIconSize">210dp</dimen>
+    <dimen name="album_width">100dp</dimen>
+    <dimen name="album_cardCornerRadius">15dp</dimen>
+    <dimen name="album_cardElevation">20dp</dimen>
+</resources>
