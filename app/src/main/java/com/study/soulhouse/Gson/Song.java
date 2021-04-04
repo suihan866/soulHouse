@@ -6,6 +6,7 @@ public class Song {
     private  SongAuthor author;
     private Album album;
     private String picUrl;
+    private String musicUrl;
     public String getName() {
         return name;
     }
@@ -43,5 +44,13 @@ public class Song {
 
     public String getPicUrl() {
         return picUrl;
+    }
+
+    public String getMusicUrl() {
+        return musicUrl;
+    }
+
+    public void setMusicUrl(String musicUrl) {
+        this.musicUrl = musicUrl;
     }
 }

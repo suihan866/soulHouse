@@ -20,6 +20,8 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 import com.study.soulhouse.Gson.detailedPlaylist;
+import com.study.soulhouse.finalDate.api_url;
+
 public class HttpResponse {
     //搜索获得推荐歌单
     public static List<PlayList> responseForPlaylist(String address){
@@ -177,6 +179,7 @@ public class HttpResponse {
                         JSONArray jsonArray=jsonObject.getJSONArray("songs");
                         jsonObject=jsonArray.getJSONObject(0);
                         song.setId(jsonObject.getString("id"));
+                        song.setMusicUrl(api_url.music_play_url+song.getId());
                         song.setName(jsonObject.getString("name"));
                         SongAuthor songAuthor=new SongAuthor();
                         jsonArray=jsonObject.getJSONArray("ar");
@@ -191,6 +194,7 @@ public class HttpResponse {
                         album.setName(jsonObject.getString("name"));
                         album.setPicUrl(jsonObject.getString("picUrl"));
                         song.setAlbum(album);
+                        song.setPicUrl(album.getPicUrl());
                         song.notify();
                     }
                 } catch (JSONException e) {

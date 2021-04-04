@@ -22,6 +22,9 @@ public class SearchActivity extends AppCompatActivity {
         Intent intent=getIntent();
         String url=intent.getStringExtra("url");
         List<Song> songs= HttpResponse.responseForSong(url);
+        for (Song song : songs) {
+            Log.d("songs",""+song.getId());
+        }
         Log.d("songs",songs.size()+"");
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);

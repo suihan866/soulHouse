@@ -9,7 +9,7 @@
         android:layout_height="wrap_content">
         <androidx.appcompat.widget.AppCompatSeekBar
             android:layout_centerInParent="true"
-            android:id="@+id/activity_play_music_seeKbar"
+            android:id="@+id/seeKbar"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             style="?android:attr/progressBarStyleHorizontal"
@@ -19,13 +19,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:layout_toLeftOf="@id/activity_play_music_seeKbar"/>
+            android:layout_toLeftOf="@id/seeKbar"/>
         <TextView
             android:id="@+id/play_music_endTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:layout_toRightOf="@id/activity_play_music_seeKbar"/>
+            android:layout_toRightOf="@id/seeKbar"/>
 
     </RelativeLayout>
     <RelativeLayout

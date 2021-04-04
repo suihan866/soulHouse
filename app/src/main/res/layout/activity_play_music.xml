@@ -32,10 +32,11 @@
     <com.study.soulhouse.View.PlayMusicView
         android:layout_marginTop="100dp"
         android:layout_gravity="center_horizontal"
-        android:id="@+id/activity_play_music_playMusicView"
+        android:id="@+id/playMusicView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <com.study.soulhouse.View.mySeekBarView
+    <com.study.soulhouse.View.MySeekBarView
+        android:id="@+id/m_seekBar"
         android:layout_gravity="bottom|center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
